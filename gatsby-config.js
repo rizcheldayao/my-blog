@@ -20,34 +20,34 @@ module.exports = {
     'gatsby-plugin-offline',
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-  {
-    resolve: `gatsby-mdx`,
-    options: {
-      gatsbyRemarkPlugins: [
-      {
-        resolve: "gatsby-remark-images",
-        options: {
-          wrapperStyle: 'margin-right:0px; ',
-          maxWidth: 800,
-          sizeByPixelDensity: true
-        }
-      }
-      ]
-    }
-  },
-  {
-    resolve: "gatsby-source-filesystem",
-    options: {
-      name: "posts",
-      path: `${__dirname}/content/posts/`
-    }
-  },
-  {
-    resolve: "gatsby-source-filesystem",
-    options: {
-      name: "blog-images",
-      path: `${__dirname}/src/images`
-    }
-  },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              wrapperStyle: 'margin-right:0px; ',
+              maxWidth: 800,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/content/posts/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog-images',
+        path: `${__dirname}/src/images`,
+      },
+    },
   ],
 }

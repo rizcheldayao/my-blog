@@ -5,8 +5,6 @@ import styled from '@emotion/styled'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
 const Container = styled(`div`)`
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-     "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0 auto;
     max-width: 700px;
     width: 100%:
